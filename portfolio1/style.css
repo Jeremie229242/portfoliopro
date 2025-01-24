@@ -401,6 +401,9 @@ span{
 
 .portfolio-box img {
     max-width: 100%;
+
+
+    transition: .9s ease;
 }
 
 .portfolio-box .portfolio-layer{
@@ -417,6 +420,15 @@ span{
     text-align: center;
     padding: 0 4rem;
     justify-content: center;
+
+
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+
+
+transition: .9s ease;
+    
 }
 
 .portfolio-layer h4{
@@ -426,12 +438,34 @@ span{
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    
+
+}
+
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+font-size: 2rem;
+color: #333;
+
 }
 
 
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
 
 
+.portfolio-box:hover .portfolio-layer{
+    opacity: 1;
+}
 
 
 
